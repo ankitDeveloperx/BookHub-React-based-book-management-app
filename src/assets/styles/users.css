@@ -1,0 +1,113 @@
+.users {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(2, 61, 61);    
+    padding-bottom: 5vh;
+
+    & .header {
+        text-align: center;
+        /* background: linear-gradient(darkblue, white); */
+        text-shadow: 0px 0px 5px aqua;
+        padding: 2vh 0;
+        font-style: italic;
+        text-decoration: underline;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        animation: slideDown 0.6s ease-in-out;
+    }
+
+    & .container {
+        & table {
+            margin: 3vh auto;
+            width: 95%;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease;
+            border-color: transparent;
+            
+
+            & thead {
+                background-color: rgb(2, 97, 97);
+                color: white;
+
+                & tr {
+                    & th {
+                        padding: 2vh 1vw;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            & tbody {
+                background-color: rgb(132, 204, 204);
+                color: black;
+                & tr {
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #478c9696;
+                        /* transform: scale(1.01); */
+                        font-size: 2rem;
+                        
+                    }
+
+                    & td {
+                        padding: 1rem;
+                        font-size: 15px;
+
+                        & button {
+                            background-color: transparent;
+                            border: none;
+                            cursor: pointer;
+                            transition: transform 0.2s ease;
+
+                            & .preview-btn{
+                                &:hover {
+                                    transform: scale(1.8);
+                                    color: rgb(1, 43, 43);
+                                }
+                            }
+
+                            & .dlt-btn{
+                                &:hover{
+                                    transform: scale(1.8);
+                                    color: red;
+                                }
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* // Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

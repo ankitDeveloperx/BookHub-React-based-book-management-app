@@ -1,0 +1,58 @@
+.home-container{
+    width: 100%;
+    & .home{
+        background-image: url('../images/home/download1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 86vh;
+    }
+
+    & .about{
+        background-image: url('../images/home/download2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .vission{
+        background-image: url('../images/home/download3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .mission{
+        background-image: url('../images/home/download4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .process{
+        background-image: url('../images/home/download5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .goals{
+        background-image: url('../images/home/download6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .achivements{
+        background-image: url('../images/home/download7.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    & .contact{
+        background-image: url('../images/home/download8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+}

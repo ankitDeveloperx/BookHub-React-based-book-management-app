@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(2, 61, 61); /* Match your .addbooks background */
+  color: white; /* Optional for readability */
+  font-family: sans-serif; /* Optional: ensure consistency */
+}
+
+
+.addbooks {
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #667eea, #764ba2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgb(2, 61, 61);    
+
+  
+    & .header {
+      width: 100%;
+      text-align: center;
+      /* background: linear-gradient(darkblue, white); */
+      text-shadow: 0px 0px 3px aqua;
+      padding: 4vh 0;
+      font-style: italic;
+      text-decoration: underline;
+      /* position: sticky; */
+      /* top: 0; */
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      /* z-index: 1000; */
+      animation: slideDown 0.5s ease-in-out;
+    }
+  
+    & .container {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 5vh;
+      background-color: rgba(3, 85, 85, 0.39);
+      border-color: white;   
+      padding: 4vh;
+      border-radius: 16px;
+      box-shadow: 0 0px 25px rgb(2, 133, 133);
+      animation: fadeInUp 0.6s ease-out;
+  
+      & .form-box {
+        & form {
+          display: grid;
+          /* flex-direction: column; */
+          grid-template-columns: auto auto;
+          gap: 20px;
+  
+          & input {
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  
+            &:focus {
+              outline: none;
+              border-color: rgb(75, 145, 162);
+              box-shadow: 0 0 8px rgb(75, 137, 162);
+            }
+          }
+  
+          & button {
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            background: linear-gradient(to right,rgb(8, 58, 133) ,rgb(0, 68, 68) 35%,rgb(0, 24, 24) 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0px 25px rgb(2, 133, 133);
+            
+  
+            &:hover {
+              background: linear-gradient(to right, rgb(0, 24, 24), rgb(0, 68, 68) 35%,rgb(8, 58, 133) 100%);
+              transform: scale(1.05);
+              box-shadow: inset 0px 0px 6px rgb(2, 133, 133);
+            }
+        }}
+      }
+    }
+  }
+
+  

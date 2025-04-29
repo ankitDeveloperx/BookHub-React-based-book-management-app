@@ -1,0 +1,67 @@
+.navbar {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(0, 24, 24) ,rgb(0, 68, 68) 35%,rgb(0, 24, 24) 100%);
+    display: flex;
+    padding: 2vh 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;    
+  
+    & .logo,
+    & .links {
+      height: 100%;
+    }
+  
+    & .logo {
+      width: 20%;
+      /* background-color: yellow; */
+       & img {
+        height: 75%;
+        margin-left: 10vh;
+       }
+
+       & h3 {
+        color: white;
+        margin-left: 10vh;
+        text-shadow: 0px 0px 10px black;
+       }
+
+
+    }
+  
+    & .links {
+      width: 80%;
+      /* background-color: aqua; */
+  
+      & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+  
+        & li {
+          font-weight: bold;
+          cursor: pointer;
+          color: white;
+  
+          & a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+  
+            &.active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  

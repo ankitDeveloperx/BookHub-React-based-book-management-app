@@ -1,0 +1,7 @@
+.forgot{
+    background-image: url('../images/coming-soon.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh ;
+    height: 100vh;
+    width: 100%;
+}

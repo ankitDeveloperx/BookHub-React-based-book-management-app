@@ -1,0 +1,129 @@
+.books {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(2, 61, 61);    
+  
+    & .header {
+    text-align: center;
+      /* background: linear-gradient(rgb(2, 29, 29), white); */
+      text-shadow: 0px 0px 3px aqua;
+      padding: 2vh 0;
+      font-style: italic;
+      text-decoration: underline;
+      /* position: sticky; */
+      /* top: 0; */
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      z-index: 1000;
+      animation: slideDown 0.5s ease-in-out;
+    }  
+  
+    & .container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 5vh 2vw;
+      padding: 6vh 2vw;
+      animation: fadeIn 0.5s ease-in;
+    
+      & .card {
+        background: rgb(198, 221, 221);
+        border-radius: 20px;
+        padding: 2vh 1vw;
+        box-shadow: inset 10px 10px 25px rgb(5, 105, 105);
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+  
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: inset 1px 1px 25px rgb(1, 71, 71);
+        }
+  
+        & .image {
+          img {
+            height: 30vh;
+            width: 60%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1vh;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease;
+  
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+  
+        & .title {
+          font-weight: 700;
+          font-size: 1.3rem;
+          color: rgb(2, 61, 61);
+          margin-bottom: 0.5vh;
+        }
+  
+        & .authors {
+          font-style: italic;
+          color: rgba(68, 68, 68, 0.824);
+          margin-bottom: 2vh;
+        }
+  
+        & .btns {
+          display: flex;
+          justify-content: center;
+          gap: 1vw;
+  
+          button {
+            flex: 1;
+            padding: 1vh 1vw;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+          }
+  
+          & .read {
+            color: white;
+            background: limegreen;
+            border-color: transparent;
+  
+            &:hover {
+              box-shadow: 0 0 15px lime;
+              background: darkgreen;
+              transform: scale(0.95);
+            }
+          }
+  
+          & .dlt {
+            color: white;
+            background: rgb(180, 56, 56);
+            border-color: transparent;
+  
+            &:hover {
+              box-shadow: 0 0 15px rgb(255, 51, 51);
+              background: rgb(172, 38, 38);
+              transform: scale(0.95);
+            }
+          }
+
+          & .cart-btn {
+            color: white;
+            background: rgb(197, 179, 13);
+            border-color: transparent;
+  
+            &:hover {
+              box-shadow: 0 0 15px rgb(245, 227, 67);
+              background: rgb(121, 109, 2);
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+    }
+  }
